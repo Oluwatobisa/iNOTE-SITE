@@ -1,12 +1,19 @@
 
 import './App.css';
+import {BrowserRouter as Router, Routes,Route } from 'react-router-dom'
+import {Home} from './pages/Home'
+import {Navbar} from './pages/Navbar'
 
 function App() {
   return (
-    <div className=" flex mt-6 justify-center">
-      <div className="flex">
-        <h1>iNOTE</h1>
-      </div>
+    <div className='App'>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route path = "/" element = {<Home />} />
+        </Routes>
+      </Router>
+      
     </div>
   );
 }
