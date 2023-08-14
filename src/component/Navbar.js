@@ -4,7 +4,7 @@ import './index.css'
 
 
 
-export const Navbar = () => {
+export const Navbar = () => { 
   return(
     <nav className='navbar'>
     <h1 className="logo text-xl">iNOTE INSTITUTE</h1>
@@ -17,8 +17,8 @@ export const Navbar = () => {
     </div>
 
     <div className='Btn'>
-    <Link to ='/Signup'> <button className=' bg-orange-500 text-white w-20 rounded-xl'>Sign Up </button></Link>
-    <Link to ='/Login'> <button className=' bg-orange-500 text-white w-20 rounded-xl'>Login </button></Link>
+    <Link to ='/Signup'> <button className=' bg-orange-500 text-white w-20 rounded-3xl h-10'>Sign Up </button></Link>
+    <Link to ='/Login'> <button className=' bg-orange-500 text-white w-20 rounded-3xl h-10'>Login </button></Link>
     </div>
   </nav>
   )
